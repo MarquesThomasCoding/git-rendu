@@ -3,51 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nassim.css">
     <title>Nassim</title>
 </head>
 <body>
-    <style>
-        * {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: #f1f1f1;
-        }
-        a {
-            color: darkblue;
-            text-decoration: none;
-        }
-        a:hover {
-            font-weight: bold;
-        }
-        .profile-card {
-            background-color: #f1f1f1;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            padding: 10px;
-            width: 500px;
-            margin: 50px 50px ;
-            text-align: center;
-        }
-        .nom {
-            font-size: 40px;
-        }
-        img {
-            width: 100%;
-            object-fit: cover;
-            margin: 20px 0;
-            border-radius: 10px;
-        }
-        .description {
-            text-align: left;
-        }
-    </style>
+    
+    <main>
     <div class="profile-card">
         <p class="nom"><b>Nassim</b> Rhoune</p>
         <h3>Âge : 20 ans</h3>
-        <img src="./imgs/logo-iim.jpg" alt="IIM">
-        <p class="description">Nassim est un jeune homme de 20 ans, étudiant à l'<a href="https://iim.fr">IIM Digital School</a>. Il est actuellement en 2ème année de Bachelor Web et Digital.
+        <img id="school" src="./imgs/logo-iim.jpg" alt="IIM">
+        <p class="description">Nassim est un jeune homme de 20 ans, étudiant à l'<a href="https://iim.fr">IIM Digital School</a>. Il est actuellement en 2ème année de Bachelor <b>Coding & Digital Innovation</b>.
         <br><br>
         Sa passion la plus évidente est le football.
         <br><br>
@@ -55,5 +21,11 @@
         <br><br>
         En dehors du football et des jeux vidéo, Nassim apprécie beaucoup le voyage. Il rêve de découvrir de nouveaux horizons, de plonger dans des cultures étrangères et d'explorer des pays lointains. Chaque opportunité de voyage est pour lui une aventure à ne pas manquer.
     </div>
+    </main>
+        <div class="container">
+            <img class="caroussel" src="./imgs/football.png">
+        </div>
+    </div>
 </body>
+<script src="nassim.js"></script>
 </html>

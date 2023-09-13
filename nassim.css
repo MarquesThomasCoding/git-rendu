@@ -1,0 +1,66 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+main {
+    height: 100%;
+    width: 100%;
+    background-color: #f1f1f1;
+    margin-top: 50px;
+}
+a {
+    text-decoration: none;
+}
+.profile-card {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+.nom {
+    font-size: 40px;
+}
+img#school {
+    width: 100%;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+.description {
+    text-align: left;
+}
+
+img.caroussel {
+    width: 80%;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 1140px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-card {
+        width: 80%;
+    }
+}

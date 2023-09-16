@@ -1,19 +1,34 @@
-const srcs = ["./imgs/football.png", "./imgs/jeuvideo.png",];
-const descriptions = [
-    "Sa passion la plus évidente est les jeux vidéo.",
-    "Les animaux constitue une autre de ses grandes passions.",];
-const img = document.querySelector('.caroussel');
-let currentIndex = 0;
+const caroussel1 = document.querySelector('#caroussel-1');
+const caroussel2 = document.querySelector('#caroussel-2');
 
-function nextSlide() {
-    img.style.opacity = 0;
+const srcsCaroussel1 = [
+    './imgs/citiesskylines.jpg',
+    './imgs/fh4.jpg',
+]
+const srcsCaroussel2 = [
+    './imgs/leo_and_co.png',
+    './imgs/animaux.jpg',
+]
 
+let indexCaroussel1 = 0;
+let indexCaroussel2 = 0;
+
+setInterval(() => {
+    caroussel1.style.opacity = '0';
     setTimeout(() => {
-        currentIndex = (currentIndex + 1) % srcs.length;
-        img.setAttribute('src', srcs[currentIndex]);
-        document.querySelector('.img-description').innerHTML = descriptions[currentIndex];
-        img.style.opacity = 1;
+        caroussel1.setAttribute('src', srcsCaroussel1[indexCaroussel1]);
+        caroussel1.style.opacity = '1';
     }, 1000);
-}
+    indexCaroussel1++;
+    if (indexCaroussel1 >= srcsCaroussel1.length) indexCaroussel1 = 0;
+}, 4000);
 
-setInterval(nextSlide, 4000);
+setInterval(() => {
+    caroussel2.style.opacity = '0';
+    setTimeout(() => {
+        caroussel2.setAttribute('src', srcsCaroussel2[indexCaroussel2]);
+        caroussel2.style.opacity = '1';
+    }, 1000);
+    indexCaroussel2++;
+    if (indexCaroussel2 >= srcsCaroussel2.length) indexCaroussel2 = 0;
+}, 4000);

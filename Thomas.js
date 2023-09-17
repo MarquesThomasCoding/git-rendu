@@ -2,12 +2,12 @@ const caroussel1 = document.querySelector('#caroussel-1');
 const caroussel2 = document.querySelector('#caroussel-2');
 
 const srcsCaroussel1 = [
-    './imgs/fh4.jpg',
     './imgs/citiesskylines.jpg',
+    './imgs/fh4.jpg',
 ]
 const srcsCaroussel2 = [
-    './imgs/animaux.jpg',
     './imgs/leo_and_co.png',
+    './imgs/animaux.jpg',
 ]
 
 let indexCaroussel1 = 0;
